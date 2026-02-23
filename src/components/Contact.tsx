@@ -52,7 +52,7 @@ export default function Contact() {
               </div>
               <div className="ml-4 text-base text-gray-300">
                 <p className="font-medium text-white">GitHub</p>
-                <a href="https://github.com/shawn-nam" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
+                <a href="https://github.com/nhs102" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
                   github.com/shawn-nam
                 </a>
               </div>
