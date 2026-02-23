@@ -53,7 +53,7 @@ export default function Contact() {
               <div className="ml-4 text-base text-gray-300">
                 <p className="font-medium text-white">GitHub</p>
                 <a href="https://github.com/nhs102" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">
-                  github.com/shawn-nam
+                  github.com/nhs102
                 </a>
               </div>
             </motion.div>
