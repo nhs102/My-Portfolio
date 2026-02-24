@@ -31,6 +31,7 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8 items-center">
             <Link to="/" className={isActive('/')}>Home</Link>
             <Link to="/about" className={isActive('/about')}>About</Link>
+            <Link to="/resume" className={isActive('/resume')}>Resume</Link>
             <Link to="/projects" className={isActive('/projects')}>Projects</Link>
             <Link to="/skills" className={isActive('/skills')}>Skills</Link>
           </nav>
@@ -43,7 +44,7 @@ export default function Header() {
               className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-colors border border-white/10"
             >
               <Download className="w-4 h-4" />
-              Resume
+              Download Resume
             </a>
             <Link 
               to="/contact" 
@@ -71,6 +72,7 @@ export default function Header() {
           <div className="px-4 pt-2 pb-6 space-y-2 shadow-xl">
             <Link to="/" onClick={toggleMobileMenu} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/')}`}>Home</Link>
             <Link to="/about" onClick={toggleMobileMenu} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/about')}`}>About</Link>
+            <Link to="/resume" onClick={toggleMobileMenu} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/resume')}`}>Resume</Link>
             <Link to="/projects" onClick={toggleMobileMenu} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/projects')}`}>Projects</Link>
             <Link to="/skills" onClick={toggleMobileMenu} className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/skills')}`}>Skills</Link>
             
@@ -81,7 +83,7 @@ export default function Header() {
                 className="flex items-center justify-center gap-2 w-full px-4 py-2 bg-white/10 hover:bg-white/20 text-white font-medium rounded-lg transition-colors border border-white/10"
               >
                 <Download className="w-4 h-4" />
-                Download Resume
+                Download CV
               </a>
               <Link 
                 to="/contact" 
