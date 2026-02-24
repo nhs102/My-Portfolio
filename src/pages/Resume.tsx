@@ -46,7 +46,7 @@ const experienceData = [
     date: 'Apr 2019 - Mar 2020',
     title: 'Digital Marketing & Content Manager',
     subtitle: 'EnglishConnect',
-    description: 'Managed digital marketing campaigns with a monthly budget of $1,000, targeting a 15–30 age demographic. Executed SEO, paid advertising, and traffic optimization while producing promotional video content for Facebook and Instagram. Managed the official Instagram page, achieving a 4% Click-Through Rate (CTR) on ads, with a 40% conversion rate of clicks leading to actual program subscriptions and class participation.'
+    description: 'Managed digital marketing campaigns with a monthly budget of $1,000, targeting a 15–30 age demographic. Executed SEO, paid advertising, and traffic optimization while producing promotional video content for YouTube, Facebook, and Instagram. Managed the official YouTube channel and Instagram page, achieving a 4% Click-Through Rate (CTR) on ads, with a 40% conversion rate of clicks leading to actual program subscriptions and class participation.'
   },
   {
     id: 4,

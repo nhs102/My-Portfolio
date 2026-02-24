@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code2, BrainCircuit, Palette, Coffee, Plane, Camera, Video } from 'lucide-react';
+import { Code2, BrainCircuit, Palette, Plane, Camera, Video, Music, Dumbbell } from 'lucide-react';
 
 export default function About() {
   const containerVariants = {
@@ -65,10 +65,13 @@ export default function About() {
                   <Code2 className="w-4 h-4 text-blue-400" /> Open Source
                 </span>
                 <span className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">
-                  <Coffee className="w-4 h-4 text-yellow-400" /> Coffee Brewing
+                  <Music className="w-4 h-4 text-yellow-400" /> Music
                 </span>
                 <span className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">
-                  <Plane className="w-4 h-4 text-green-400" /> Traveling
+                  <Dumbbell className="w-4 h-4 text-green-400" /> Sports
+                </span>
+                <span className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">
+                  <Plane className="w-4 h-4 text-teal-400" /> Traveling
                 </span>
                 <span className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:bg-white/10 hover:text-white transition-colors cursor-default">
                   <Camera className="w-4 h-4 text-red-400" /> Photography

@@ -26,13 +26,15 @@ const projects = [
     title: 'Digital Marketing & Content Creation',
     role: 'Digital Marketing & Content Manager',
     problem: 'An educational program targeting the 15-30 demographic suffered from low brand awareness and engagement.',
-    solution: 'Produced high-quality promotional videos using Adobe Premiere Pro and After Effects, managed the official Instagram page, and executed targeted Facebook/Instagram ad campaigns.',
+    solution: 'Produced high-quality promotional videos using Adobe Premiere Pro and After Effects, managed the official YouTube channel and Instagram page, and executed targeted Facebook/Instagram ad campaigns.',
     impact: 'Managed a $1,000 monthly ad budget, achieving a 4% CTR and a 40% conversion rate from clicks to actual program subscriptions and class participation.',
     architecture: 'Premiere Pro → After Effects → FB/IG Ads Manager',
     tech: ['Video Production', 'Marketing', 'Adobe CS'],
     link: 'https://www.youtube.com/watch?v=19fGuidzPoI',
     github: '',
     instagram: 'https://www.instagram.com/englishconnect.kor?igsh=MWp2NTd0cnE2NzVxOQ==',
+    youtubeChannel: 'https://www.youtube.com/@%EC%9E%89%EA%B8%80%EB%A6%AC%EC%89%AC%EC%BB%A4%EB%84%A5%ED%8A%B8-k7k',
+    archiveLink: 'https://web.archive.org/web/20211203101257/https://englishconnect.helpinghands.center/',
     image: 'https://img.youtube.com/vi/19fGuidzPoI/maxresdefault.jpg',
     isVideo: true,
     videoId: '19fGuidzPoI'
@@ -88,6 +90,22 @@ const projects = [
     link: 'https://rtmvtyktedva47vb7psekx.streamlit.app/',
     github: 'https://github.com/nhs102/job-market-analyzer/blob/main/README.md',
     image: jobMarketImg
+  },
+  {
+    id: 7,
+    title: 'Vlog Video Editing & Production',
+    role: 'Lead Video Editor',
+    problem: 'A YouTube channel needed engaging, well-paced vlog content to capture audience attention and tell a compelling story from raw, unorganized footage.',
+    solution: 'Led the post-production process, transforming raw footage into polished vlog-style videos. Focused on pacing, color grading, audio mixing, and storytelling using Adobe Premiere Pro.',
+    impact: 'Delivered high-quality, engaging vlog content that enhanced channel storytelling, viewer retention, and overall production value.',
+    architecture: 'Premiere Pro → Audio Mixing → Color Grading',
+    tech: ['Video Editing', 'Premiere Pro', 'Storytelling'],
+    link: 'https://www.youtube.com/watch?v=2oLQ77dOsnM',
+    github: '',
+    image: 'https://img.youtube.com/vi/2oLQ77dOsnM/maxresdefault.jpg',
+    isVideo: true,
+    videoId: '2oLQ77dOsnM',
+    videoId2: 'OAFhUAtLSDI'
   }
 ];
 
@@ -214,24 +232,37 @@ export default function Projects() {
                   )}
                 </AnimatePresence>
 
-                <motion.div layout="position" className="flex gap-3 mt-4 mb-4">
+                <motion.div layout="position" className="flex flex-wrap gap-3 mt-4 mb-4">
                   {project.link && project.link !== project.github && (
                     project.isVideo ? (
-                      <button 
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setSelectedVideo(project.videoId || null);
-                        }}
-                        className="flex-1 text-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition-colors"
-                      >
-                        Watch Video
-                      </button>
+                      <>
+                        <button 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSelectedVideo(project.videoId || null);
+                          }}
+                          className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition-colors"
+                        >
+                          {project.videoId2 ? 'Watch Vlog 1' : 'Watch Video'}
+                        </button>
+                        {project.videoId2 && (
+                          <button 
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedVideo(project.videoId2 || null);
+                            }}
+                            className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition-colors"
+                          >
+                            Watch Vlog 2
+                          </button>
+                        )}
+                      </>
                     ) : (
                       <a 
                         href={project.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex-1 text-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition-colors"
+                        className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded transition-colors"
                         onClick={(e) => e.stopPropagation()}
                       >
                         Live Demo
@@ -243,7 +274,7 @@ export default function Projects() {
                       href={project.github} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex-1 text-center py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-semibold rounded transition-colors"
+                      className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-white/10 hover:bg-white/20 text-white text-sm font-semibold rounded transition-colors"
                       onClick={(e) => e.stopPropagation()}
                     >
                       GitHub
@@ -254,10 +285,32 @@ export default function Projects() {
                       href={project.instagram} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex-1 text-center py-2 bg-pink-600/80 hover:bg-pink-600 text-white text-sm font-semibold rounded transition-colors"
+                      className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-pink-600/80 hover:bg-pink-600 text-white text-sm font-semibold rounded transition-colors"
                       onClick={(e) => e.stopPropagation()}
                     >
                       Instagram
+                    </a>
+                  )}
+                  {project.youtubeChannel && (
+                    <a 
+                      href={project.youtubeChannel} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-red-600/80 hover:bg-red-600 text-white text-sm font-semibold rounded transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      YouTube
+                    </a>
+                  )}
+                  {project.archiveLink && (
+                    <a 
+                      href={project.archiveLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex-1 min-w-[100px] flex items-center justify-center py-2 bg-gray-600/80 hover:bg-gray-600 text-white text-sm font-semibold rounded transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      Archive
                     </a>
                   )}
                 </motion.div>
