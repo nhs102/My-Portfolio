@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { motion, type Variants } from 'framer-motion';
 import profileImg from '../assets/images/profile.jpg';
-import resumePdf from '../assets/files/Shawn Resume (Platform).pdf';
+import resumePdf from '../assets/files/shawn_resume.pdf';
 
 export default function Home() {
   const containerVariants: Variants = {

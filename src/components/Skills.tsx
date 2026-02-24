@@ -119,9 +119,9 @@ export default function Skills() {
           </motion.div>
           <motion.div variants={itemVariants}>
             <SkillCard 
-              tech="Figma & UI/UX" 
-              role="Digital Experience Design" 
-              description="Created wireframes and high-fidelity prototypes. Bridged the gap between design and development to ensure intuitive and aesthetically pleasing user interfaces." 
+              tech="Adobe Creative Suite" 
+              role="Content Strategy & Production" 
+              description="Produced high-quality promotional videos using Premiere Pro and After Effects, and built scalable UI design systems using Figma." 
             />
           </motion.div>
           <motion.div variants={itemVariants}>

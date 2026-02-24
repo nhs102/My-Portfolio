@@ -10,7 +10,7 @@ const educationData = [
   },
   {
     id: 2,
-    date: 'Recent',
+    date: 'Sep 2025',
     title: '3rd Place @ AI Hackathon',
     subtitle: 'Weber State University',
     description: 'Placed 3rd out of 125 participants by developing an innovative AI solution.',
@@ -18,7 +18,7 @@ const educationData = [
   },
   {
     id: 3,
-    date: 'Recent',
+    date: 'Nov 2025',
     title: '3rd Place @ CS Major AI Hackathon',
     subtitle: 'Brigham Young University - Idaho',
     description: 'Placed 3rd out of 110 participants with a context-aware LLM application.',
@@ -43,6 +43,13 @@ const experienceData = [
   },
   {
     id: 3,
+    date: 'Apr 2019 - Mar 2020',
+    title: 'Digital Marketing & Content Manager',
+    subtitle: 'EnglishConnect',
+    description: 'Managed digital marketing campaigns with a monthly budget of $1,000, targeting a 15–30 age demographic. Executed SEO, paid advertising, and traffic optimization while producing promotional video content for Facebook and Instagram. Managed the official Instagram page, achieving a 4% Click-Through Rate (CTR) on ads, with a 40% conversion rate of clicks leading to actual program subscriptions and class participation.'
+  },
+  {
+    id: 4,
     date: 'Nov 2017 - Apr 2018',
     title: 'Business Intelligence Analyst',
     subtitle: 'Cent Korea',

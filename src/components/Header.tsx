@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu, X, Download } from 'lucide-react';
-import resumePdf from '../assets/files/Shawn Resume (Platform).pdf';
+import resumePdf from '../assets/files/shawn_resume.pdf';
 
 export default function Header() {
   const location = useLocation();
