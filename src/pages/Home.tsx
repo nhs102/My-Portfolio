@@ -41,11 +41,12 @@ export default function Home() {
             <motion.h2 variants={itemVariants} className="text-xl md:text-2xl font-medium text-blue-400 mb-2">
               Hi, I'm Shawn Nam!
             </motion.h2>
-            <motion.h1 variants={itemVariants} className="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
-              FULL-STACK & AI <span className="text-blue-500"> ENGINEER </span>
+            <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight leading-tight">
+              WEB DESIGNER & <br className="hidden lg:block" />
+              <span className="text-blue-500">PLATFORM DEVELOPER</span>
             </motion.h1>
-            <motion.p variants={itemVariants} className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto md:mx-0 leading-relaxed">
-              Building AI-powered platforms that transform complex data into actionable business results. Specializing in LLM orchestration, React, and Node.js.
+            <motion.p variants={itemVariants} className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              Building reliable, data-driven web platforms with intuitive user experiences. I focus on practical solutions and maintainable architecture to support long-term business growth.
             </motion.p>
             
             {/* Buttons */}

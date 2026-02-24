@@ -38,10 +38,10 @@ export default function About() {
             className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl max-w-4xl mx-auto backdrop-blur-sm"
           >
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-left">
-              I am a <span className="text-blue-400 font-semibold">Full-Stack & AI Engineer</span> with a strong focus on building <span className="text-white font-medium bg-blue-900/30 px-2 py-0.5 rounded">AI-powered platforms</span> that transform complex data into actionable business results. 
+              I am a <strong className="text-blue-400 font-bold">Web Designer & Platform Developer</strong>. I build <strong className="text-white font-bold bg-blue-900/30 px-2 py-0.5 rounded">reliable, data-driven platforms</strong> that solve real business problems.
             </p>
             <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 text-left">
-              I have extensive experience in <span className="text-white font-medium bg-purple-900/30 px-2 py-0.5 rounded">LLM orchestration</span> and context-aware system design. By combining a deep understanding of the <span className="text-white font-medium bg-green-900/30 px-2 py-0.5 rounded">React & Node.js stack</span> with UI/UX expertise in <span className="text-white font-medium bg-pink-900/30 px-2 py-0.5 rounded">Figma</span>, I build intuitive, high-performance products that bridge the gap between advanced AI and end-user needs.
+              With a strong foundation in <strong className="text-white font-bold bg-green-900/30 px-2 py-0.5 rounded">React & Node.js</strong>, I focus on maintainable architecture and practical solutions. By combining engineering with <strong className="text-white font-bold bg-pink-900/30 px-2 py-0.5 rounded">UI/UX design</strong>, I create intuitive products designed for long-term growth and user satisfaction.
             </p>
             
             <div className="mt-12 pt-8 border-t border-white/10">
