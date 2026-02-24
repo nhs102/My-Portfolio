@@ -43,7 +43,7 @@ export default function Home() {
             </motion.h2>
             <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight leading-tight">
               WEB DESIGNER & <br className="hidden lg:block" />
-              <span className="text-blue-500">PLATFORM DEVELOPER</span>
+              <span className="text-blue-500">FULL-STACK DEVELOPER</span>
             </motion.h1>
             <motion.p variants={itemVariants} className="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto md:mx-0 leading-relaxed">
               Building reliable, data-driven web platforms with intuitive user experiences. I focus on practical solutions and maintainable architecture to support long-term business growth.

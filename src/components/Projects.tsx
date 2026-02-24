@@ -125,7 +125,7 @@ export default function Projects() {
                 </div>
               </a>
               <div className="p-6 flex-grow flex flex-col">
-                <div className="text-sm font-semibold text-blue-400 mb-1">{project.role}</div>
+                <div className="text-sm font-semibold text-blue-400 mb-1">My Role: {project.role}</div>
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-blue-400 transition-colors">{project.title}</h3>
                 
                 <div className="text-gray-300 mb-6 text-sm leading-relaxed flex-grow space-y-3">
@@ -138,11 +138,11 @@ export default function Projects() {
                     <span className="text-gray-400">{project.solution}</span>
                   </div>
                   <div>
-                    <strong className="text-white block mb-1">Impact:</strong> 
+                    <strong className="text-white block mb-1">Results:</strong> 
                     <span className="text-blue-300 font-medium">{project.impact}</span>
                   </div>
                   <div className="text-xs text-gray-500 border-t border-white/10 pt-3 mt-3">
-                    <strong className="text-gray-400">Architecture:</strong> {project.architecture}
+                    <strong className="text-gray-400">Tech Stack:</strong> {project.architecture}
                   </div>
                 </div>
 
